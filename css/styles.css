@@ -1,0 +1,988 @@
+/* Custom Styles - Corporate UI/UX Enhancements */
+
+/* ============================================
+   TYPOGRAPHY & READABILITY
+   ============================================ */
+
+/* Base typography improvements */
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    padding-top: 0;
+}
+
+/* Professional heading typography */
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h1 {
+    line-height: 1.1;
+}
+
+h2 {
+    line-height: 1.2;
+}
+
+h3 {
+    line-height: 1.3;
+}
+
+/* Improved paragraph readability */
+p {
+    line-height: 1.75;
+    color: #4b5563;
+}
+
+/* Better text contrast for corporate readability */
+.text-gray-600 {
+    color: #4b5563;
+}
+
+.text-gray-700 {
+    color: #374151;
+}
+
+/* ============================================
+   SPACING & LAYOUT
+   ============================================ */
+
+/* Consistent section spacing */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Improved container spacing */
+.max-w-7xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+    .max-w-7xl {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .max-w-7xl {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/* Better spacing for cards and containers */
+.rounded-xl,
+.rounded-2xl {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   RESPONSIVE IMPROVEMENTS
+   ============================================ */
+
+/* Mobile-first responsive improvements */
+@media (max-width: 640px) {
+    /* Better mobile typography */
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    /* Improved mobile spacing */
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    /* Better mobile form inputs */
+    input, textarea, select {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+/* Tablet optimizations */
+@media (min-width: 640px) and (max-width: 1024px) {
+    section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* Desktop optimizations */
+@media (min-width: 1024px) {
+    section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+/* ============================================
+   SUBTLE HOVER EFFECTS
+   ============================================ */
+
+/* Professional link hover effects */
+a {
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+/* Subtle button hover effects */
+button, .btn {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover, .btn:hover {
+    transform: translateY(-1px);
+}
+
+button:active, .btn:active {
+    transform: translateY(0);
+}
+
+/* Card hover effects - subtle and professional */
+.bg-white,
+.bg-gray-50 {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Border hover effects */
+.border-gray-100:hover,
+.border-gray-200:hover {
+    border-color: #d1d5db;
+}
+
+/* Shadow hover effects - subtle elevation */
+.hover\:shadow-lg:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:shadow-2xl:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Icon hover effects - subtle scale */
+.group:hover .group-hover\:scale-110 {
+    transform: scale(1.08);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.group:hover .group-hover\:translate-x-1 {
+    transform: translateX(0.25rem);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.group:hover .group-hover\:gap-3 {
+    gap: 0.75rem;
+    transition: gap 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   FORM ENHANCEMENTS
+   ============================================ */
+
+/* Improved form input styling */
+input, textarea, select {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px; /* Prevents zoom on mobile */
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+    border-color: #9ca3af;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Placeholder styling */
+input::placeholder,
+textarea::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+}
+
+/* ============================================
+   NAVIGATION ENHANCEMENTS
+   ============================================ */
+
+/* Fixed navbar improvements */
+nav {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Navigation link hover - subtle */
+nav a {
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Active navigation state */
+nav a.bg-gray-50 {
+    background-color: #f9fafb;
+}
+
+/* Mobile menu improvements */
+#mobile-menu {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: 0;
+    overflow: hidden;
+}
+
+#mobile-menu:not(.hidden) {
+    max-height: 500px;
+}
+
+#mobile-menu a {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#mobile-menu a:hover {
+    background-color: #f3f4f6;
+}
+
+/* ============================================
+   CARDS & CONTAINERS
+   ============================================ */
+
+/* Professional card styling */
+.card,
+.bg-white,
+.bg-gray-50 {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Subtle card hover */
+.border-2:hover {
+    border-color: #e5e7eb;
+}
+
+/* ============================================
+   ACCESSIBILITY & FOCUS
+   ============================================ */
+
+/* Improved focus styles for accessibility */
+*:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+button:focus,
+a:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Skip focus outline for mouse users */
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+
+/* Custom scrollbar - professional */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 5px;
+    border: 2px solid #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* ============================================
+   UTILITIES
+   ============================================ */
+
+/* Grid pattern background */
+.bg-grid-pattern {
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* Smooth transitions for interactive elements */
+a, button, input, select, textarea {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Image optimization */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Loading state for buttons */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Print styles */
+@media print {
+    nav,
+    footer,
+    .no-print {
+        display: none;
+    }
+    
+    body {
+        color: #000;
+        background: #fff;
+    }
+}
+
+/* ============================================
+   CORPORATE-SPECIFIC ENHANCEMENTS
+   ============================================ */
+
+/* Better contrast for corporate readability */
+.text-gray-900 {
+    color: #111827;
+}
+
+/* Professional spacing for corporate content */
+.prose {
+    max-width: 65ch;
+}
+
+.prose p {
+    margin-bottom: 1.25em;
+}
+
+.prose ul, .prose ol {
+    margin-bottom: 1.25em;
+    padding-left: 1.625em;
+}
+
+/* Improved button styling for corporate feel */
+.bg-blue-600 {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-blue-600:hover {
+    background-color: #2563eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Subtle scale on hover for interactive elements */
+.hover\:scale-105:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Professional border radius */
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+/* ============================================
+   RESPONSIVE TYPOGRAPHY
+   ============================================ */
+
+/* Better responsive font sizes */
+@media (max-width: 640px) {
+    .text-4xl {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .text-5xl {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .text-6xl {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+/* GPU acceleration for smooth animations */
+.transform {
+    will-change: transform;
+}
+
+/* Optimize repaints */
+.hover\:shadow-lg,
+.hover\:shadow-xl,
+.hover\:shadow-2xl {
+    will-change: box-shadow;
+}
+
+/* ============================================
+   ADDITIONAL CORPORATE ENHANCEMENTS
+   ============================================ */
+
+/* Better text selection */
+::selection {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+/* Improved list spacing */
+ul, ol {
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Better spacing for nested lists */
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Improved table styling (if used) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Better code block styling (if used) */
+code {
+    background-color: #f3f4f6;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+    font-family: 'Courier New', monospace;
+}
+
+/* Improved badge/pill styling */
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/* Better icon alignment */
+i[class^="fas"],
+i[class^="fab"],
+i[class^="far"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Improved button group spacing */
+.flex.gap-4 > * {
+    margin: 0;
+}
+
+/* Better mobile touch targets */
+@media (max-width: 640px) {
+    button, a.btn, .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Better mobile text sizing */
+    .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+    
+    .text-base {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    /* Improved mobile navigation */
+    nav {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    }
+    
+    /* Better mobile logo sizing */
+    nav .text-2xl {
+        font-size: 1.25rem;
+    }
+    
+    /* Improved mobile menu items */
+    #mobile-menu a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Improved grid gaps for mobile */
+@media (max-width: 640px) {
+    .grid {
+        gap: 1rem;
+    }
+    
+    /* Better card spacing on mobile */
+    .grid > * {
+        margin-bottom: 0;
+    }
+    
+    /* Improved mobile section padding */
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Better container max-widths for readability */
+@media (min-width: 1280px) {
+    .max-w-7xl {
+        max-width: 80rem;
+    }
+}
+
+/* Improved z-index management */
+nav {
+    z-index: 1000;
+}
+
+/* Better backdrop blur support */
+.backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* Improved gradient text rendering */
+.text-transparent {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better form label spacing */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+/* Improved error states (if needed) */
+.error {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.error:focus {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* Better success states */
+.success {
+    border-color: #10b981;
+    color: #10b981;
+}
+
+/* Improved loading spinner (if needed) */
+.spinner {
+    border: 2px solid #f3f4f6;
+    border-top: 2px solid #3b82f6;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Better focus-visible support */
+*:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Improved text truncation */
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Better line clamp support */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ============================================
+   CORPORATE-SPECIFIC READABILITY
+   ============================================ */
+
+/* Better contrast for corporate content */
+.text-gray-800 {
+    color: #1f2937;
+}
+
+/* Improved spacing for corporate layouts */
+.space-y-6 > * + * {
+    margin-top: 1.5rem;
+}
+
+.space-y-8 > * + * {
+    margin-top: 2rem;
+}
+
+/* Better gap spacing in grids */
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+.gap-12 {
+    gap: 3rem;
+}
+
+/* Improved container padding for readability */
+@media (min-width: 1024px) {
+    .max-w-7xl {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/* Better text alignment for corporate content */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Improved button spacing */
+button + button,
+.btn + .btn {
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 640px) {
+    button + button,
+    .btn + .btn {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Better form field spacing */
+form > * + * {
+    margin-top: 1.5rem;
+}
+
+/* Improved card content spacing */
+.p-6, .p-8 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Better icon-text alignment */
+.flex.items-center {
+    align-items: center;
+}
+
+.flex.items-start {
+    align-items: flex-start;
+}
+
+/* Improved responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Better table responsiveness */
+@media (max-width: 640px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Improved loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: wait;
+}
+
+/* Better error message styling */
+.error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Improved success message styling */
+.success-message {
+    color: #059669;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Better tooltip support (if needed) */
+[title] {
+    cursor: help;
+}
+
+/* Improved skip link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #3b82f6;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Better print styles */
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    a, a:visited {
+        text-decoration: underline;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+    
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* ============================================
+   TAB SYSTEM STYLES
+   ============================================ */
+
+/* Tab navigation styling */
+.tab-button {
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding-bottom: 1rem;
+    margin-bottom: -1px;
+}
+
+.tab-button:hover {
+    color: #2563eb;
+}
+
+.tab-button.active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+}
+
+.tab-button:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* Tab panel transitions */
+.tab-panel {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.tab-panel.hidden {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+/* Smooth tab content transition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tab navigation scrollbar for mobile */
+@media (max-width: 768px) {
+    .border-b.overflow-x-auto {
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+    
+    .border-b.overflow-x-auto::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .border-b.overflow-x-auto::-webkit-scrollbar-track {
+        background: #f1f5f9;
+    }
+    
+    .border-b.overflow-x-auto::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 2px;
+    }
+}
+
+/* Improved tab button spacing on mobile */
+@media (max-width: 640px) {
+    .tab-button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .tab-button i {
+        font-size: 0.875rem;
+    }
+}
+
+/* ============================================
+   FILTER SYSTEM STYLES
+   ============================================ */
+
+/* Solution card transitions */
+.solution-card {
+    transition: opacity 0.3s ease, transform 0.3s ease, display 0.3s ease;
+}
+
+.solution-card[style*="display: none"] {
+    display: none !important;
+}
+
+/* Filter select styling */
+.filter-select {
+    min-width: 200px;
+}
+
+@media (max-width: 640px) {
+    .filter-select {
+        min-width: 100%;
+    }
+}
+
+/* No results message */
+.no-results-message {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Active filter badges */
+#active-filters span {
+    transition: all 0.2s ease;
+}
+
+#active-filters span:hover {
+    background-color: #dbeafe;
+}
+
+/* Filter group animations */
+.filter-group {
+    transition: opacity 0.3s ease, display 0.3s ease;
+}

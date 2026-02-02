@@ -9,6 +9,24 @@ html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-padding-top: 80px; /* Account for fixed navbar */
+}
+
+/* Smooth scrolling for all browsers */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Prevent flash of unstyled content */
+body {
+    visibility: visible;
 }
 
 body {
@@ -239,8 +257,28 @@ textarea::placeholder {
 
 /* Fixed navbar improvements */
 nav {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Navbar scroll effect - maintain blurry transparent look */
+nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Active nav link indicator */
+nav a[href*="index.html"]:not(.bg-blue-600),
+nav a[href*="coming-soon.html"]:not(.bg-blue-600) {
+    position: relative;
+}
+
+nav a span.absolute {
+    transition: all 0.3s ease;
 }
 
 /* Navigation link hover - subtle */

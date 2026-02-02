@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page en cours de construction - Synergates">
+    <title>Bientôt disponible - Synergates</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white/30 backdrop-blur-xl shadow-sm fixed w-full top-0 z-50 transition-all duration-300 border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2.5 group">
+                        <img src="images/logo.png" alt="Synergates Logo" class="h-9 w-auto transition-transform group-hover:scale-105">
+                        <span class="text-xl font-bold text-gray-900">Synergates</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-sm transition-all rounded-md hover:bg-gray-50">Accueil</a>
+                    <a href="coming-soon.html" class="px-3 py-2 text-blue-600 font-medium text-sm transition-all rounded-md hover:bg-blue-50 relative">
+                        Solutions
+                        <span class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600 rounded-full"></span>
+                    </a>
+                    <a href="coming-soon.html" class="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-sm transition-all rounded-md hover:bg-gray-50">À propos</a>
+                    <a href="coming-soon.html" class="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-sm transition-all rounded-md hover:bg-gray-50">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none p-1.5 rounded-md hover:bg-gray-100 transition" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/98 backdrop-blur-lg border-t border-gray-200/60 shadow-lg">
+            <div class="px-4 pt-2 pb-3 space-y-0.5">
+                <a href="index.html" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-50 rounded-md text-sm transition">Accueil</a>
+                <a href="coming-soon.html" class="block px-3 py-2.5 text-blue-600 bg-blue-50 rounded-md text-sm font-medium">Solutions</a>
+                <a href="coming-soon.html" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-50 rounded-md text-sm transition">À propos</a>
+                <a href="coming-soon.html" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-50 rounded-md text-sm transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Coming Soon Section -->
+    <section class="pt-28 md:pt-36 lg:pt-44 pb-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden min-h-screen flex items-center">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="mb-8">
+                <i class="fas fa-tools text-6xl md:text-8xl text-blue-400 mb-6"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Page en cours de construction
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Nous travaillons actuellement sur cette page. Elle sera bientôt disponible !
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="index.html" class="group bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105 flex items-center gap-2">
+                    <i class="fas fa-home"></i>
+                    Retour à l'accueil
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="images/logo.png" alt="Synergates Logo" class="h-12 w-auto">
+                        <span class="text-2xl font-bold text-white">Synergates</span>
+                    </div>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Intégrateur de solutions technologiques au Maroc et en Afrique. Votre partenaire en sécurité électronique et infrastructures technologiques.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Twitter">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Liens rapides</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="coming-soon.html" class="hover:text-white transition">Solutions</a></li>
+                        <li><a href="coming-soon.html" class="hover:text-white transition">À propos</a></li>
+                        <li><a href="coming-soon.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Solutions -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Expertises</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="coming-soon.html" class="hover:text-white transition">Sécurité Électronique</a></li>
+                        <li><a href="coming-soon.html" class="hover:text-white transition">Ingénierie IT</a></li>
+                        <li><a href="coming-soon.html" class="hover:text-white transition">Réseaux et Communications</a></li>
+                        <li><a href="coming-soon.html" class="hover:text-white transition">Domotique</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Details -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1 text-blue-400"></i>
+                            <span>144 Rue M Smiha<br>Casablanca, Maroc</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-blue-400"></i>
+                            <a href="tel:+212660307007" class="hover:text-white transition">+212 660 307 007</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-blue-400"></i>
+                            <a href="tel:+212522096855" class="hover:text-white transition">+212 522 09 68 55</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                            <a href="mailto:info@synergates.ma" class="hover:text-white transition">info@synergates.ma</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                    <p>&copy; 2022 par SYNERGATES.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-white transition">Développement durable</a>
+                        <a href="coming-soon.html" class="hover:text-white transition">A propos de nous</a>
+                        <a href="coming-soon.html" class="hover:text-white transition">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
